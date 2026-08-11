@@ -28,5 +28,5 @@ if (
   tscArgs.push('--watch');
 }
 
-const result = spawnSyncWithAutoShell('tsc', tscArgs, { stdio: 'inherit' });
+const result = spawnSyncWithAutoShell('npx', ['tsc', ...tscArgs], { stdio: 'inherit' });
 process.exit(result.status ?? 0);

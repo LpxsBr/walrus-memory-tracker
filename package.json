@@ -1,18 +1,26 @@
 {
   "name": "walrus-memory-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make device memory tracker",
-  "main": "src/WalrusMemoryTrackerModule.ts",
-  "types": "src/WalrusMemoryTracker.types.ts",
+  "main": "build/WalrusMemoryTrackerModule.js",
+  "types": "build/WalrusMemoryTracker.types.d.ts",
   "scripts": {
-    "build": "node internal/module_scripts/build.js",
+    "build": "node build-simple.js",
     "clean": "node internal/module_scripts/clean.js",
     "lint": "eslint src/",
     "test": "node internal/module_scripts/test.js",
     "prepare": "node internal/module_scripts/prepare.js",
+    "prepublishOnly": "npm run build && npm run lint",
     "open:ios": "node internal/module_scripts/open-ios.js",
     "open:android": "node internal/module_scripts/open-android.js"
   },
+  "files": [
+    "build/",
+    "src/",
+    "ios/",
+    "android/",
+    "expo-module.config.json"
+  ],
   "keywords": [
     "react-native",
     "expo",
