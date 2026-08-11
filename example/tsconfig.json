@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "walrus-memory-tracker": ["../src/index"],
+      "walrus-memory-tracker/*": ["../src/*"]
+    }
+  }
+}

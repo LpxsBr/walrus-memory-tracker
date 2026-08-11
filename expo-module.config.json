@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["WalrusMemoryTrackerModule"]
+  },
+  "android": {
+    "modules": ["walrus.module.memorytracker.WalrusMemoryTrackerModule"]
+  }
+}
