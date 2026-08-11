@@ -8,12 +8,12 @@ export default function App() {
     totalMemory: any;
     freeMemory: any;
     usedMemory: any;
-    app_usedMemoery: any;
+    app_usedMemory: any;
   }>({
     totalMemory: 0,
     freeMemory: 0,
     usedMemory: 0,
-    app_usedMemoery: 0
+    app_usedMemory: 0
   });
 
   React.useEffect(() => {
@@ -32,7 +32,7 @@ export default function App() {
         const { device_totalMemory, device_availableMemory, device_usedMemory, process_usedMemory } = memoryInfo;
 
         setMemoryData({
-          totalMemory: device_totalMemory, freeMemory: device_availableMemory, usedMemory: device_usedMemory, app_usedMemoery: process_usedMemory
+          totalMemory: device_totalMemory, freeMemory: device_availableMemory, usedMemory: device_usedMemory, app_usedMemory: process_usedMemory
         });
       } catch (error) {
         if (!cancelled) {
@@ -61,7 +61,7 @@ export default function App() {
           <Text>{Number(memoryData.totalMemory / 1024).toFixed(2)} GB</Text>
           <Text>{Number(memoryData.usedMemory  / 1024).toFixed(2)} GB</Text>
           <Text>{Number(memoryData.freeMemory  / 1024).toFixed(2)} GB</Text>
-          <Text>{Number(memoryData.app_usedMemoery  / 1024).toFixed(2)} GB</Text>
+          <Text>{Number(memoryData.app_usedMemory  / 1024).toFixed(2)} GB</Text>
 
           <Text>{WalrusMemoryTracker.hello()}</Text>
         </Group>
