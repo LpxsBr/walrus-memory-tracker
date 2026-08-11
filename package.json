@@ -26,7 +26,11 @@
   "author": "LpxsBr <anselmolopes.an@gmail.com> (https://github.com/LpxsBr)",
   "license": "MIT",
   "homepage": "https://github.com/LpxsBr/walrus-memory-tracker#readme",
-  "dependencies": {},
+  "dependencies": {
+    "expo": "~57.0.7",
+    "react": "19.2.3",
+    "react-native": "0.86.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@types/jest": "^29.2.1",
