@@ -1,9 +1,9 @@
 {
   "name": "walrus-memory-tracker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Make device memory tracker",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "src/WalrusMemoryTrackerModule.ts",
+  "types": "src/WalrusMemoryTracker.types.ts",
   "scripts": {
     "build": "node internal/module_scripts/build.js",
     "clean": "node internal/module_scripts/clean.js",
