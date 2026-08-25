@@ -1,6 +1,6 @@
 {
   "name": "walrus-memory-tracker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Make device memory tracker",
   "main": "build/WalrusMemoryTrackerModule.js",
   "types": "build/WalrusMemoryTracker.types.d.ts",
